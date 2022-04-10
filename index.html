@@ -2,49 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Latihan 19|Gallery</title>
+    <title>Website untuk Aura</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-
         body{
-            text-align: center;
-            background-color: #757575;
-        }
-
-        ul{
+            font-size: 30px;
+            width: 500px;
+            margin: 50px auto;
             display: grid;
-            width: 80%;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            margin: auto;
-            border: 3px solid white;
+            grid-template-areas: 'judul judul'
+            'suka tidak-suka';
+            text-align: center;
+            /*border: 1px solid black;*/
         }
 
-        ul li{
-            list-style: none;
+        div{
+            min-height: 120px;
+            min-width: 100px;
+            text-align: center;
+            line-height: 120px;
         }
 
-        img{
-            width: 100%;
-            display: block;
+        .judul{
+            grid-area: judul;
+        }
+
+        .suka{
+            grid-area: suka;
+            background-color: skyblue;
+        }
+
+        .tidak-suka{
+            background-color: coral;
+            grid-area: tidak-suka;
         }
     </style>
 </head>
 <body>
-<h2>My Gallery</h2>
-<ul>
-    <li><img src="/img/1.jpeg" alt=""></li>
-    <li><img src="/img/2.jpg" alt=""></li>
-    <li><img src="/img/3.jpg" alt=""></li>
-    <li><img src="/img/4.jpg" alt=""></li>
-    <li><img src="/img/5.jpg" alt=""></li>
-    <li><img src="/img/6.jpg" alt=""></li>
-    <li><img src="/img/7.jpg" alt=""></li>
-    <li><img src="/img/8.jpg" alt=""></li>
-    <li><img src="/img/9.jpg" alt=""></li>
-    <li><img src="/img/10.jpg" alt=""></li>
-</ul>
+<div class="judul">Apakah Kamu Suka Sayur?</div>
+<div class="suka" onclick="yoi()">Ya</div>
+<div class="tidak-suka" onclick="ora()">Tidak</div>
+
+<script>
+    const ya = document.querySelector('.suka');
+    const tidak = document.querySelector('.tidak-suka');
+
+    function yoi(){
+       document.getElementsByTagName("body")[0].innerHTML = "<div class='judul'>Bagus!</div>";
+    }
+
+    function ora(){
+       document.getElementsByTagName("body")[0].innerHTML = "<div class='judul'>Lapo?</div>";
+    }
+</script>
 </body>
 </html>
