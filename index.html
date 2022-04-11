@@ -1,81 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bermain dengan Warna</title>
-    <style>
-        body{
-            text-align: center;
-            margin: 100px auto;
-        }
-        button{
-            height: 30px;
-            /*width: 30px;*/
-        }
-        .dark-mode{
-            background-color: #222;
-            color: #CCC;
-        }
-
-        .kotak{
-            width: 25px;
-            height: 25px;
-            margin: 10px auto;
-        }
-
-        .merah{
-            background-color: red;
-        }
-
-        .hijau{
-            background-color: green;
-        }
-
-        .biru{
-            background-color: blue;
-        }
-
-        .fitur{
-            display: inline-block;
-        }
-
-        .satu, .dua, .tiga{
-            border: 1px solid white;
-            padding: 5px 10px;
-            font-family: "Times New Roman";
-            font-size: 20px;
-            font-weight: 700;
-            color: black;
-            background-color: white;
-            cursor: pointer;
-        }
-
-        p{
-            font-size: 12px;
-            font-weight: normal;
-            margin-top: 0;
-        }
-    </style>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suwi Jawa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="option">
-        <div class="fitur satu">Fitur 1 <p>bermain dg tombol</p></div>
-        <div class="fitur dua">Fitur 2 <p>bermain dengan posisi mouse/cursor/posisi jari</p><p>Khusus fitur 2 klik kotak ini untuk mengaktifkan</p></div>
-        <div class="fitur tiga">Fitur 3 <p>bermain dengan slider</p></div>
+<div class="container">
+    <h1 class="judul">Suwit Jawa</h1>
+    <div class="area">
+        <div class="computer-area">
+            <img src="img/semut.png" alt="computer">
+        </div>
+        <div class="user-area">
+            <ul>
+                <li><img src="img/semut.png" alt=""></li>
+                <li><img src="img/gajah.png" alt=""></li>
+                <li><img src="img/orang.png" alt=""></li>
+            </ul>
+        </div>
     </div>
-    <h1>Bermain dengan warna</h1>
-    <button type="button" id="reset">Click Here</button>
-    <br>
-    <div class="kotak merah"></div>
-    <input type="range" id="red" min="0" max="255">
-    <br>
-    <div class="kotak hijau"></div>
-    <input type="range" id="green" min="0" max="255">
-    <br>
-    <div class="kotak biru"></div>
-    <input type="range" id="blue" min="0" max="255">
+    <div class="result">Kalah!</div>
+</div>
 
-
-<script src="src/script.js"></script>
+<div class="footer">Website dalam tahap pengembangan</div>
 </body>
 </html>
