@@ -34,9 +34,35 @@
         .biru{
             background-color: blue;
         }
+
+        .fitur{
+            display: inline-block;
+        }
+
+        .satu, .dua, .tiga{
+            border: 1px solid white;
+            padding: 5px 10px;
+            font-family: "Times New Roman";
+            font-size: 20px;
+            font-weight: 700;
+            color: black;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        p{
+            font-size: 12px;
+            font-weight: normal;
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
+    <div class="option">
+        <div class="fitur satu">Fitur 1 <p>bermain dg tombol</p></div>
+        <div class="fitur dua">Fitur 2 <p>bermain dengan posisi mouse/cursor/posisi jari</p><p>Khusus fitur 2 klik kotak ini untuk mengaktifkan</p></div>
+        <div class="fitur tiga">Fitur 3 <p>bermain dengan slider</p></div>
+    </div>
     <h1>Bermain dengan warna</h1>
     <button type="button" id="reset">Click Here</button>
     <br>
@@ -50,6 +76,6 @@
     <input type="range" id="blue" min="0" max="255">
 
 
-<script src="src/script2.js"></script>
+<script src="src/script.js"></script>
 </body>
 </html>
