@@ -2,57 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Website untuk Aura</title>
+    <title>Bermain dengan Warna</title>
     <style>
         body{
-            font-size: 30px;
-            width: 500px;
-            margin: 50px auto;
-            display: grid;
-            grid-template-areas: 'judul judul'
-            'suka tidak-suka';
             text-align: center;
-            /*border: 1px solid black;*/
+            margin: 100px auto;
         }
-
-        div{
-            min-height: 120px;
-            min-width: 100px;
-            text-align: center;
-            line-height: 120px;
+        button{
+            height: 30px;
+            /*width: 30px;*/
         }
-
-        .judul{
-            grid-area: judul;
-        }
-
-        .suka{
-            grid-area: suka;
-            background-color: skyblue;
-        }
-
-        .tidak-suka{
-            background-color: coral;
-            grid-area: tidak-suka;
+        .dark-mode{
+            background-color: #222;
+            color: #CCC;
         }
     </style>
 </head>
 <body>
-<div class="judul">Apakah Kamu Suka Sayur?</div>
-<div class="suka" onclick="yoi()">Ya</div>
-<div class="tidak-suka" onclick="ora()">Tidak</div>
+    <h1>Bermain dengan warna</h1>
+    <button>Click Here</button>
 
-<script>
-    const ya = document.querySelector('.suka');
-    const tidak = document.querySelector('.tidak-suka');
 
-    function yoi(){
-       document.getElementsByTagName("body")[0].innerHTML = "<div class='judul'>Bagus!</div>";
-    }
 
-    function ora(){
-       document.getElementsByTagName("body")[0].innerHTML = "<div class='judul'>Lapo?</div>";
-    }
-</script>
+<script src="src/script2.js"></script>
 </body>
 </html>
