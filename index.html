@@ -16,12 +16,38 @@
             background-color: #222;
             color: #CCC;
         }
+
+        .kotak{
+            width: 25px;
+            height: 25px;
+            margin: 10px auto;
+        }
+
+        .merah{
+            background-color: red;
+        }
+
+        .hijau{
+            background-color: green;
+        }
+
+        .biru{
+            background-color: blue;
+        }
     </style>
 </head>
 <body>
     <h1>Bermain dengan warna</h1>
-    <button>Click Here</button>
-
+    <button type="button" id="reset">Click Here</button>
+    <br>
+    <div class="kotak merah"></div>
+    <input type="range" id="red" min="0" max="255">
+    <br>
+    <div class="kotak hijau"></div>
+    <input type="range" id="green" min="0" max="255">
+    <br>
+    <div class="kotak biru"></div>
+    <input type="range" id="blue" min="0" max="255">
 
 
 <script src="src/script2.js"></script>
